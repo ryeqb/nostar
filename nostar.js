@@ -13,8 +13,6 @@
     'use strict';
 
     function noStar() {
-    	const name = "Washi1337";
-
     	try {
     		let pageIdentifier = document.getElementsByClassName("url fn")[0].firstChild.data;
     		let pageStar = document.getElementsByClassName("js-toggler-container js-social-container starring-container ")[0];
@@ -28,7 +26,7 @@
     		let nickname = document.getElementsByClassName("p-nickname vcard-username d-block")[0].innerText;
     		let repositories = document.getElementById("user-repositories-list").getElementsByTagName("li"); //.remove();
 
-    		if((nickname === name) && repositories) {
+    		if(nickname && repositories) {
     			for(let i = 0; i < repositories.length; i++) {
     				let tabStar = repositories[i].getElementsByClassName("js-social-form js-form-toggle-target")[1];
     				tabStar.remove();
