@@ -14,19 +14,17 @@
 
     function noStar() {
     	try {
-    		let pageIdentifier = document.getElementsByClassName("url fn")[0].firstChild.data;
     		let pageStar = document.getElementsByClassName("js-toggler-container js-social-container starring-container ")[0];
 
-    		if(pageIdentifier && pageStar)
+    		if(pageStar)
     			pageStar.remove();
 
     	} catch(err) { console.log(err); }
 
     	try {
-    		let nickname = document.getElementsByClassName("p-nickname vcard-username d-block")[0].innerText;
-    		let repositories = document.getElementById("user-repositories-list").getElementsByTagName("li"); //.remove();
+    		let repositories = document.getElementById("user-repositories-list").getElementsByTagName("li");
 
-    		if(nickname && repositories) {
+    		if(repositories) {
     			for(let i = 0; i < repositories.length; i++) {
     				let tabStar = repositories[i].getElementsByClassName("js-social-form js-form-toggle-target")[1];
     				tabStar.remove();
