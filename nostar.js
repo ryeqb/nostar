@@ -42,7 +42,7 @@
             for(let i = 0; i < starNotice.length; i++) {
                 let username = "Washi1337";
                 let starElement = starNotice[i].getElementsByClassName("btn btn-sm ml-2 mb-2 js-toggler-target")[1];
-                let name = starNotice[i].getElementsByClassName("f4 lh-condensed text-bold text-gray-dark")[0].outerText.substring(0, username.length);
+                let name = starNotice[i].getElementsByClassName("f4 lh-condensed text-bold text-gray-dark")[0].textContent.trim().substring(0, username.length);
 
                 if(starElement && (name == username)) {
                     starElement.remove();
