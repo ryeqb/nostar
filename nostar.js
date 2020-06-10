@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Anti-Washi Git
 // @namespace    RTN
-// @version      0.0.1
+// @version      0.0.5
 // @description  Stop starring your own repos kekw
 // @author       Rye#0001
 // @match        https://github.com/Washi1337*
